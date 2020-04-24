@@ -5,7 +5,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 const fileUpload = require('express-fileupload');
-var cookieSession = require('cookie-session')
+var cookieSession = require('cookie-session');
+var request = require('request')
 
 require("dotenv").config();
 
@@ -120,6 +121,8 @@ app.post('/uploads', function (req, res) {
 //     fileSize: 50 * 1024 * 1024
 //   },
 // }));
+
+
 
 
 
